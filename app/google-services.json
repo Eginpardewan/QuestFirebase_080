@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "569102994768",
+    "project_id": "questfirebase-bd03e",
+    "storage_bucket": "questfirebase-bd03e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569102994768:android:22c65ae88ef8e36a7b7055",
+        "android_client_info": {
+          "package_name": "com.example.questfirebase_080"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUolpUqUlFo50n-8c2Z-GFOgAoLNjDSbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
