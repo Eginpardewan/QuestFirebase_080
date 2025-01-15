@@ -1,7 +1,5 @@
 package com.example.questfirebase_080.model
 
-import com.example.questfirebase_080.repository.DosenPembimbing1Repository
-
 data class Mahasiswa (
     val nim: String,
     val nama: String,
