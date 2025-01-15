@@ -113,7 +113,6 @@ fun InsertMhsView(
 
     }
 }
-
 @Composable
 fun InsertBodyMhs(
     modifier: Modifier = Modifier,
@@ -226,6 +225,23 @@ fun FormMahasiswa(
 
         OutlinedTextField(
             modifier = Modifier.fillMaxWidth(),
+            value = mahasiswaEvent.judul_skripsi,
+            onValueChange = {
+                onValueChange(mahasiswaEvent.copy(judul_skripsi = it))
+            },
+            label = { Text("Judul Skripsi")},
+            isError = errorState.judul_skripsi != null,
+            placeholder = { Text("Masukkan judul skripsi")}
+        )
+        Text(
+            text = errorState.judul_skripsi ?: "",
+            color = Color.Red
+        )
+
+
+
+        OutlinedTextField(
+            modifier = Modifier.fillMaxWidth(),
             value = mahasiswaEvent.alamat,
             onValueChange = {
                 onValueChange(mahasiswaEvent.copy(alamat = it))
@@ -282,6 +298,8 @@ fun FormMahasiswa(
             text = errorState.angkatan ?: "",
             color = Color.Red
         )
+
+        
 
     }
 }
